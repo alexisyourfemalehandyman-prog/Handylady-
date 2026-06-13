@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Female Handyman | Tucson, Oro Valley & Catalina</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#07111f;color:white;overflow-x:hidden;}
+.top-bar{background:#00b7ff;color:#07111f;text-align:center;padding:12px;font-weight:700;letter-spacing:1px;}
+header{min-height:100vh;background:linear-gradient(rgba(7,17,31,.82),rgba(7,17,31,.88)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80');background-size:cover;background-position:center;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:25px 8%;}
+.logo{font-size:30px;font-weight:800;color:#00b7ff;}
+.logo span{display:block;font-size:12px;letter-spacing:3px;color:white;margin-top:4px;}
+.nav-links{display:flex;gap:25px;}
+.nav-links a{color:white;text-decoration:none;font-weight:600;}
+.nav-links a:hover{color:#00b7ff;}
+.hero{display:flex;align-items:center;min-height:80vh;padding:0 8%;}
+.hero-content{max-width:900px;}
+.badge{display:inline-block;padding:12px 22px;border:1px solid #00b7ff;border-radius:50px;color:#00b7ff;margin-bottom:25px;font-size:14px;}
+.hero h1{font-size:78px;font-weight:800;line-height:1;margin-bottom:25px;}
+.hero h1 span{color:#00b7ff;}
+.hero p{font-size:22px;line-height:1.7;color:#d4d4d4;max-width:800px;margin-bottom:25px;}
+.feature-tags{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:35px;}
+.feature-tags span{padding:10px 18px;border-radius:40px;border:1px solid #00b7ff;background:rgba(0,183,255,.12);}
+.btn{display:inline-block;padding:16px 30px;border-radius:40px;text-decoration:none;font-weight:700;margin-right:12px;margin-top:10px;}
+.btn-primary{background:#00b7ff;color:#07111f;}
+.btn-secondary{border:1px solid #00b7ff;color:white;}
+section{padding:90px 8%;}
+.section-title{text-align:center;margin-bottom:60px;}
+.section-title small{color:#00b7ff;font-weight:700;letter-spacing:2px;}
+.section-title h2{font-size:52px;margin-top:10px;}
+.pricing-section{background:#091523;}
+.pricing-box{max-width:950px;margin:auto;text-align:center;background:linear-gradient(135deg,#00b7ff,#0078d7);padding:50px;border-radius:28px;box-shadow:0 0 45px rgba(0,183,255,.25);}
+.price{font-size:86px;font-weight:800;line-height:1;margin:18px 0;}
+.price-note{font-size:18px;line-height:1.7;max-width:750px;margin:auto;}
+.intro-grid,.plans,.services-grid{display:grid;gap:24px;}
+.intro-grid{grid-template-columns:repeat(3,1fr);}
+.plans{grid-template-columns:repeat(3,1fr);margin-top:40px;}
+.services-grid{grid-template-columns:repeat(4,1fr);}
+.card,.plan,.service-card{background:#0d1a2b;border:1px solid rgba(0,183,255,.18);border-radius:22px;padding:32px;transition:.3s ease;}
+.card:hover,.plan:hover,.service-card:hover{transform:translateY(-8px);border-color:#00b7ff;box-shadow:0 0 30px rgba(0,183,255,.22);}
+.card h3,.plan h3,.service-card h3{color:#00b7ff;font-size:23px;margin-bottom:12px;}
+.card p,.plan p,.service-card p{color:#d0d0d0;line-height:1.7;}
+.service-icon{font-size:42px;margin-bottom:15px;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;}
+.about-image img{width:100%;border-radius:28px;box-shadow:0 0 40px rgba(0,183,255,.16);}
+.about-content h2{font-size:48px;line-height:1.1;margin-bottom:22px;}
+.about-content p{color:#d0d0d0;line-height:1.8;margin-bottom:18px;}
+.check-list{list-style:none;margin-top:25px;}
+.check-list li{position:relative;padding-left:32px;margin-bottom:14px;color:#e6e6e6;}
+.check-list li:before{content:"✓";position:absolute;left:0;color:#00b7ff;font-weight:800;}
+.contact-box{max-width:950px;margin:auto;background:#0d1a2b;border:1px solid rgba(0,183,255,.25);border-radius:28px;padding:50px;text-align:center;box-shadow:0 0 35px rgba(0,183,255,.15);}
+.contact-phone{font-size:42px;font-weight:800;color:#00b7ff;margin:20px 0;}
+.contact-email{font-size:23px;margin-bottom:25px;}
+footer{background:#050d18;text-align:center;padding:60px 20px;border-top:2px solid #00b7ff;}
+footer h3{color:#00b7ff;font-size:32px;margin-bottom:14px;}
+footer p{color:#d0d0d0;margin-bottom:10px;}
+@media(max-width:1000px){.hero h1{font-size:52px;}.intro-grid,.plans,.services-grid,.about-grid{grid-template-columns:1fr;}.nav-links{display:none;}.section-title h2{font-size:38px;}.price{font-size:60px;}.contact-phone{font-size:30px;}}
+</style>
+</head>
+<body>
+<div class="top-bar">WOMEN PREFERRED • TRUSTED HOME SERVICES • ORO VALLEY • CATALINA • 85749</div>
+<header>
+<nav>
+<div class="logo">YOUR FEMALE HANDYMAN<span>HOME REPAIRS • INSTALLATIONS • ORGANIZATION</span></div>
+<div class="nav-links"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</nav>
+<div class="hero"><div class="hero-content"><div class="badge">COMFORTABLE • TRUSTWORTHY • PROFESSIONAL</div><h1>A Handyman Service <span>Designed For Women</span></h1><p>Many homeowners, seniors, single women, and busy professionals prefer having a trustworthy female professional in their home. We provide reliable handyman services, installations, organization, and household assistance throughout Tucson, Oro Valley, Catalina, and the 85749 area.</p><div class="feature-tags"><span>$30 Per Hour</span><span>2 Hour Minimum</span><span>Tools Included</span><span>Supplies Included</span><span>Women Preferred Service</span></div><a href="#contact" class="btn btn-primary">Book Service</a><a href="#services" class="btn btn-secondary">View Services</a></div></div>
+</header>
+<section><div class="section-title"><small>WHY CLIENTS CHOOSE US</small><h2>Reliable Home Help Without The Hassle</h2></div><div class="intro-grid"><div class="card"><h3>Female-Owned Service</h3><p>Many clients feel more comfortable hiring a female professional for work inside their home.</p></div><div class="card"><h3>Tools Included</h3><p>Professional tools are provided for standard household projects and repairs.</p></div><div class="card"><h3>Flexible Scheduling</h3><p>Available for one-time visits, project work, recurring household assistance, and seasonal tasks.</p></div></div></section>
+<section id="pricing" class="pricing-section"><div class="section-title"><small>PRICING</small><h2>Simple, Honest Pricing</h2></div><div class="pricing-box"><h3>Starting At</h3><div class="price">$30/hr</div><div class="price-note">Tools and basic supplies included. Minimum service appointment: 2 Hours. Additional materials may be required depending on the project.</div></div><div class="plans"><div class="plan"><h3>Quick Projects</h3><p>Small repairs, installations, hanging items, organization projects, and household tasks.</p></div><div class="plan"><h3>Half-Day Service</h3><p>Perfect for tackling multiple projects during a single visit.</p></div><div class="plan"><h3>Full-Day Projects</h3><p>Larger household improvement and organization projects.</p></div></div></section>
+<section id="services"><div class="section-title"><small>SERVICES</small><h2>Elite Home Repair & Household Services</h2></div><div class="services-grid"><div class="service-card"><div class="service-icon">🖼️</div><h3>Picture Hanging</h3><p>Photos, artwork, mirrors, wall decor, frames, and gallery-style placement.</p></div><div class="service-card"><div class="service-icon">📺</div><h3>TV Mounting</h3><p>Assistance mounting TVs, brackets, and entertainment-area setup.</p></div><div class="service-card"><div class="service-icon">🪛</div><h3>Furniture Assembly</h3><p>Desks, beds, shelves, dressers, chairs, cabinets, and home office furniture.</p></div><div class="service-card"><div class="service-icon">🪟</div><h3>Curtains & Blinds</h3><p>Curtain rods, blinds, shades, window treatments, and minor adjustments.</p></div><div class="service-card"><div class="service-icon">🧰</div><h3>Small Repairs</h3><p>Basic household fixes, loose handles, hinges, knobs, shelves, and hardware.</p></div><div class="service-card"><div class="service-icon">🚪</div><h3>Cabinet Hardware</h3><p>Cabinet pulls, knobs, hinges, drawer handles, and kitchen hardware updates.</p></div><div class="service-card"><div class="service-icon">💡</div><h3>Light Fixtures</h3><p>Accessible fixture swaps, bulbs, lamps, and basic lighting updates.</p></div><div class="service-card"><div class="service-icon">🔌</div><h3>Smart Home Setup</h3><p>Doorbells, cameras, sensors, smart plugs, basic Wi-Fi device setup.</p></div><div class="service-card"><div class="service-icon">🧺</div><h3>Home Organization</h3><p>Closets, pantries, cabinets, laundry rooms, storage spaces, and garages.</p></div><div class="service-card"><div class="service-icon">🧽</div><h3>Caulking Touch-Ups</h3><p>Basic caulking around sinks, tubs, counters, and small household areas.</p></div><div class="service-card"><div class="service-icon">🪴</div><h3>Plant & Patio Help</h3><p>Light patio setup, plant stands, decor placement, and outdoor refresh tasks.</p></div><div class="service-card"><div class="service-icon">🏡</div><h3>Move-In Setup</h3><p>Helping make a new home functional with setup, assembly, hanging, and organizing.</p></div></div></section>
+<section id="about"><div class="section-title"><small>ABOUT THE SERVICE</small><h2>Trusted, Comfortable, Professional</h2></div><div class="about-grid"><div class="about-image"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80" alt="Professional handyman tools"></div><div class="about-content"><h2>A Better Home Service Experience</h2><p>Your Female Handyman was created for homeowners who want reliable help around the house from someone professional, respectful, and easy to communicate with.</p><p>This service is ideal for women, seniors, busy professionals, rental owners, and families who want a dependable female handyman for smaller repairs, installations, organization, and home setup projects.</p><ul class="check-list"><li>Female handyman service</li><li>Serving Oro Valley, Catalina, Tucson & 85749</li><li>$30 per hour</li><li>2-hour minimum appointment</li><li>Tools included for standard services</li><li>Basic supplies included when applicable</li><li>Clean, respectful, professional work</li><li>Ideal for women-preferred appointments</li><li>Perfect for small projects and home punch lists</li><li>Great for move-ins, rentals, and seasonal refreshes</li></ul></div></div></section>
+<section style="background:#091523;"><div class="section-title"><small>SERVICE AREAS</small><h2>Premium Home Help For Tucson’s Northeast Side</h2></div><div class="intro-grid"><div class="card"><h3>Oro Valley</h3><p>Elite home support for upscale residences, busy households, and professional homeowners.</p></div><div class="card"><h3>Catalina Foothills / Catalina</h3><p>Trusted handyman and organization services for high-end residential properties.</p></div><div class="card"><h3>85749 & Northeast Tucson</h3><p>Serving homes throughout the 85749 area, Tanque Verde, and surrounding neighborhoods.</p></div></div></section>
+<section id="contact"><div class="section-title"><small>CONTACT</small><h2>Book Your Project Today</h2><p style="max-width:800px;margin:auto;color:#d0d0d0;">Whether you need help with repairs, installations, organization, furniture assembly, smart home setup, or household projects, we're here to help.</p></div><div class="contact-box"><h3 style="font-size:38px;color:#00b7ff;margin-bottom:15px;">Your Female Handyman</h3><p style="font-size:18px;margin-bottom:20px;color:#d0d0d0;">Professional • Reliable • Women Preferred</p><div class="contact-phone">(520) 990-1754</div><div class="contact-email">alexis.your.female.handyman@gmail.com</div><p style="max-width:750px;margin:0 auto 35px;line-height:1.8;color:#d0d0d0;">Serving Tucson, Oro Valley, Catalina Foothills, Catalina, Tanque Verde, and the 85749 area. Available for home projects, furniture assembly, organization services, installations, and general household assistance.</p><a href="tel:5209901754" class="btn btn-primary">Call Now</a><a href="mailto:alexis.your.female.handyman@gmail.com" class="btn btn-secondary">Email Us</a></div></section>
+<section style="background:linear-gradient(135deg,#00b7ff,#0078d7);padding:70px 8%;text-align:center;"><h2 style="font-size:52px;color:white;margin-bottom:20px;">$30 Per Hour</h2><p style="font-size:22px;max-width:800px;margin:auto;line-height:1.8;color:white;">Tools Included • Basic Supplies Included • 2 Hour Minimum • Professional Service • Trusted Female Handyman</p></section>
+<footer><h3>YOUR FEMALE HANDYMAN</h3><p>Home Repairs • Furniture Assembly • Organization • Installations</p><p>Oro Valley • Catalina • Catalina Foothills • Tucson • 85749</p><p style="font-size:22px;font-weight:700;color:#00b7ff;margin-top:15px;">(520) 990-1754</p><p>alexis.your.female.handyman@gmail.com</p><p style="margin-top:25px;opacity:.7;font-size:14px;">© 2026 Your Female Handyman. All Rights Reserved.</p></footer>
+</body>
+</html>
 
